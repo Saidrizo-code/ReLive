@@ -1,0 +1,63 @@
+METIN saytini GitHub'ga yuklash - qo'llanma
+=============================================
+
+Bu papkada saytning butun kodi bor (32 ta fayl, 2.7 MB).
+Ikki xil usuldan birini tanlang. 1-USUL OSONROQ.
+
+
+----------------------------------------------------
+1-USUL (TAVSIYA): faylni ikki marta bosish
+----------------------------------------------------
+1. Brauzerda https://github.com/new ni oching
+   - Repository name: metinuz
+   - Private (shaxsiy) ni tanlang
+   - "Add a README file" va boshqa belgilarni QO'YMANG
+   - Create repository tugmasini bosing
+
+2. Ochilgan sahifadagi manzilni nusxa oling, masalan:
+   https://github.com/SIZNING_LOGIN/metinuz.git
+
+3. Shu papkadagi "1-GitHubga yuklash.bat" faylini IKKI MARTA BOSING
+   - manzilni joylab ENTER bosing
+   - GitHub oynasi chiqsa "Sign in with your browser" ni bosing va kiring
+   - "TAYYOR!" yozuvi chiqsa hammasi joyida
+
+
+----------------------------------------------------
+2-USUL: GitHub saytining o'zida yuklash (drag & drop)
+----------------------------------------------------
+1. https://github.com/new -> Repository name: metinuz -> Private ->
+   "Add a README file" ni BELGILANG -> Create repository
+   (bu usulda README kerak, chunki bo'sh repo'ga papka tashlab bo'lmaydi)
+
+2. Ochilgan sahifada "Add file" -> "Upload files" ni bosing
+
+3. Quyidagilarni sichqoncha bilan o'sha oynaga sudrab tashlang:
+
+   Papkalar:  data   lib   public   routes
+   Fayllar:   config.js   server.js   reset.js   make-poster.mjs
+              package.json   package-lock.json   render.yaml   .gitignore
+
+   MUHIM: boshqa narsani tashlamang (node_modules, .git, .bat fayllar kerak emas)
+
+4. Pastda "Commit changes" tugmasini bosing va 1-2 daqiqa kuting
+
+
+----------------------------------------------------
+KEYIN: Render'da saytni yoqish
+----------------------------------------------------
+1. https://render.com -> Get Started for Free -> GitHub bilan kiring
+2. Dashboard -> New + -> Web Service -> metinuz repo'ni tanlang
+3. Sozlamalar:
+      Name:          metinuz
+      Region:        Frankfurt (eu-central)
+      Branch:        main
+      Runtime:       Node
+      Build Command: npm install
+      Start Command: node server.js
+      Instance Type: Free
+4. Create Web Service -> 3-5 daqiqada "Live" bo'ladi
+5. Manzil: https://metinuz.onrender.com
+   Admin panel: https://metinuz.onrender.com/admin.html
+
+Agar biror joyda xato chiqsa - Qoder'da menga yozing, birga tuzatamiz.
